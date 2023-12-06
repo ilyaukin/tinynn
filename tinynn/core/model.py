@@ -37,7 +37,7 @@ class Model:
         return pickle.dumps(self.net.params)
 
     def loads(self, data):
-        params = pickle.loads(data=data)
+        params = pickle.loads(data)
 
         self.set_params(params)
 
